@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="indexs.css">
+    <style>
+        .btn{
+            border-radius: 20px;
+            border-color: #234f43;
+            transition: background 0.1s ease, border-color 0.1s ease, transform 0.2s ease;
+        }
+
+        .btn:hover{
+            border: 1px solid #51746a;
+            transform: translateY(-2px);
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <section class="py-2">
+        <p class="m-4">Kembali ke halaman utama <button class="btn btn"><a href="../index.html" style="text-decoration: none; color: black;">Profil Siswa</a></button></p>
+    </section>  
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <img src="media/logo.png" alt="Logo" class="me-2" >
+            <a class="navbar-brand" href="#">Audio Bible</a>
+            <button class="navbar-toggler" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#items">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link position-relative" href="checkout.html" id="cart-link">
+                            Cart <span id="cart-count" class="badge bg-danger rounded-pill ms-2">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="video-bg" aria-hidden="true">
+            <video autoplay muted loop playsinline preload="auto">
+                <source src="media/buds.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="hero-content text-center">
+            <h1>Audio Bible</h1>
+            <p>Your one-stop shop for the best audio products.</p>
+            <a href="index.html#items" class="btn btn-primary">See all products</a>
+        </div>
+    </header>
+    <div class="text-center reason p-5">
+        <h2>Why Us?</h2>
+        <ul class="list-unstyled">
+            <li>Wide selection of audio products</li>
+            <li>Best deals, unseen elsewhere</li>
+            <li>Extensive quality checking</li>
+            <li>Expert customer support</li>
+        </ul>
+    </div>
+    <section class="section-video py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 text-white">
+                    <h2 class="mb-3">Our Standard</h2>
+                    <p class="mb-2">All products pass a strict quality control process. We inspect audio performance, fit, battery health, and ingress protection so you get a product that performs as advertised.</p>
+                    <ul>
+                        <li>Acoustic verification and ANC testing</li>
+                        <li>Physical inspection and water-resistance checks</li>
+                        <li>Battery and charging case verification</li>
+                    </ul>
+                </div>
+                <div class="col-lg-5 d-flex justify-content-end">
+                    <div class="qc">
+                        <video autoplay muted loop playsinline preload="auto" poster="media/poster.jpg">
+                            <source src="media/qc.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main class="container my-5" id="items">
+        <section class="mt-5">
+            <h3 class="mb-4">Featured Earbuds</h3>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="media/galaxybud4pro.jpg" class="card-img-top my-3" alt="Samsung Galaxy Buds 4 Pro">
+                        <div class="card-body">
+                            <h5 class="card-title">Samsung Galaxy Buds 4 Pro</h5>
+                            <p class="card-text">Active Noise Cancellation, IP57 water resistance, and up to 36 hours with case.</p>
+                            <div class="d-flex gap-2">
+                                <a href="buds4pro.html" class="btn btn-primary">View details</a>
+                                <button class="btn btn-outline-success add-to-cart" data-id="buds4pro" data-title="Samsung Galaxy Buds 4 Pro" data-price="3999000" data-image="media/galaxybud4pro.jpg">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="media/sony-wf1000xm5.png" class="card-img-top" alt="Sony WF-1000XM5">
+                        <div class="card-body">
+                            <h5 class="card-title">Sony WF-1000XM5</h5>
+                            <p class="card-text">Natural Active Noise Cancellation, IPX7 water resistance, and up to 24 hours with case.</p>
+                            <div class="d-flex gap-2">
+                                <a href="wf1000xm5.html" class="btn btn-primary">View details</a>
+                                <button class="btn btn-outline-success add-to-cart" data-id="wf1000xm5" data-title="Sony WF-1000XM5" data-price="3150000" data-image="media/sony-wf1000xm5.png">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="media/airpods3pro.jpeg" class="card-img-top" alt="Airpods 3 Pro">
+                        <div class="card-body">
+                            <h5 class="card-title">Airpods 3 Pro</h5>
+                            <p class="card-text">Top tier microphone quality, adaptive EQ, and spatial audio.</p>
+                            <div class="d-flex gap-2">
+                                <a href="airpods3pro.html" class="btn btn-primary">View details</a>
+                                <button class="btn btn-outline-success add-to-cart" data-id="airpods3pro" data-title="Airpods 3 Pro" data-price="4499000" data-image="media/airpods3pro.jpeg">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer text-center text-white py-3">
+        <div class="container">&copy; Audio Bible — Your one-stop shop for the best audio products.</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- Add cart management script -->
+    <script>
+        // Simple client-side cart stored in localStorage under 'cart'
+        function getCart(){
+            return JSON.parse(localStorage.getItem('cart') || '[]');
+        }
+        function saveCart(cart){
+            localStorage.setItem('cart', JSON.stringify(cart));
+            updateCartCount();
+        }
+        function updateCartCount(){
+            const cart = getCart();
+            const count = cart.reduce((s,i)=>s + (i.qty||1),0);
+            const el = document.getElementById('cart-count');
+            if(el) el.textContent = count;
+        }
+        function addToCart(item){
+            const cart = getCart();
+            const existing = cart.find(i=>i.id === item.id);
+            if(existing){ existing.qty = (existing.qty||1) + (item.qty||1); }
+            else{ cart.push(Object.assign({qty:1}, item)); }
+            saveCart(cart);
+        }
+
+        document.addEventListener('DOMContentLoaded', ()=>{
+            updateCartCount();
+            document.querySelectorAll('.add-to-cart').forEach(btn=>{
+                btn.addEventListener('click', ()=>{
+                    const item = {
+                        id: btn.dataset.id,
+                        title: btn.dataset.title,
+                        price: Number(btn.dataset.price),
+                        image: btn.dataset.image
+                    };
+                    addToCart(item);
+                    // simple feedback
+                    btn.classList.add('disabled');
+                    btn.textContent = 'Added';
+                    setTimeout(()=>{ btn.classList.remove('disabled'); btn.textContent = 'Add to cart'; }, 1200);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

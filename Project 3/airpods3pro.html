@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airpods 3 pro — Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        :root{ 
+            --c1: #081016;
+            --c2: #072632;
+            --c3: #F3E3D0;
+            --c4: #D2C4B4;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body{ 
+            background: linear-gradient(180deg, var(--c2) 0%, #fff 10%); 
+        }
+
+        img.me-2{
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+        }
+       
+        .navbar, .footer{ 
+            background-color: var(--c1); 
+        }
+
+        .btn-primary{ 
+            background-color: var(--c4); 
+            border-color: var(--c4); 
+            color:#222; 
+        }
+
+        .carousel-item img{
+            height: 400px;
+            object-fit: contain;
+        }
+
+        .specs-table th{ 
+            width: 35%; 
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <img src="media/logo.png" alt="Logo" class="me-2">
+            <a class="navbar-brand" href="index.html">Audio Bible</a>
+            <button class="navbar-toggler" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#items">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link position-relative" href="checkout.html">Cart <span id="cart-count" class="badge bg-danger rounded-pill ms-2">0</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <div class="row g-4">
+            <div class="col-lg-6">
+                <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner rounded shadow-sm">
+                        <div class="carousel-item active">
+                            <img src="media/airpods3pro.jpeg" class="d-block w-100" alt="Earbuds front">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="media/airpods/side.webp" class="d-block w-100" alt="In ear" style="object-fit: cover;">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h1>Airpods 3 Pro</h1>
+                <p class="lead">Top of the class wireless earbuds with active noise cancellation and studio-level microphone.</p>
+                <h3 class="text-muted">Rp 4.499.000</h3>
+                <div class="mb-3">
+                    <a href="checkout.html" class="btn btn-primary btn-lg me-2 buy-now" data-id="airpods3pro" data-title="Airpods 3 Pro" data-price="4499000" data-image="media/airpods3pro.jpeg">Buy now</a>
+                    <button class="btn btn-outline-success add-to-cart" data-id="airpods3pro" data-title="Airpods 3 Pro" data-price="4499000" data-image="media/airpods3pro.jpeg">Add to cart</button>
+                    <a href="#specs" class="btn btn-outline-secondary ms-2">See specs</a>
+                </div>
+
+                <div class="card mt-4">
+                    <div class="card-body">
+                        <h5 class="card-title">What's in the box</h5>
+                        <ul>
+                            <li>Earbuds (L/R)</li>
+                            <li>Charging case</li>
+                            <li>USB-C cable</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mt-4">
+                <h2 id="specs">Specifications</h2>
+                <table class="table table-bordered specs-table bg-white shadow-sm table-striped">
+                    <tbody>
+                        <tr>
+                            <th>Driver</th>
+                            <td>12mm composite driver</td>
+                        </tr>
+                        <tr>
+                            <th>ANC</th>
+                            <td>Advanced adaptive ANC with transparency modes</td>
+                        </tr>
+                        <tr>
+                            <th>Battery</th>
+                            <td>Up to 7h (earbuds) / 30h with case</td>
+                        </tr>
+                        <tr>
+                            <th>Water resistance</th>
+                            <td>IPX4</td>
+                        </tr>
+                        <tr>
+                            <th>Connectivity</th>
+                            <td>Bluetooth 5.3 with low-latency mode</td>
+                        </tr>
+                        <tr>
+                            <th>Colors</th>
+                            <td>Black, Slate,</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer text-center text-white py-3">
+        <div class="container">&copy; Audio Bible — Your one-stop shop for the best audio products.</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script>
+        function getCart(){ return JSON.parse(localStorage.getItem('cart')||'[]'); }
+        function saveCart(cart){ localStorage.setItem('cart', JSON.stringify(cart)); updateCartCount(); }
+        function updateCartCount(){ const cart=getCart(); const count=cart.reduce((s,i)=>s+(i.qty||1),0); const el=document.getElementById('cart-count'); if(el) el.textContent=count; }
+        function addToCart(item){ const cart=getCart(); const existing=cart.find(i=>i.id===item.id); if(existing){ existing.qty=(existing.qty||1)+(item.qty||1);}else{ cart.push(Object.assign({qty:1}, item)); } saveCart(cart); }
+        document.addEventListener('DOMContentLoaded', ()=>{
+            updateCartCount();
+            document.querySelectorAll('.add-to-cart').forEach(btn=>btn.addEventListener('click',()=>{ addToCart({ id: btn.dataset.id, title: btn.dataset.title, price: Number(btn.dataset.price), image: btn.dataset.image }); btn.classList.add('disabled'); btn.textContent='Added'; setTimeout(()=>{btn.classList.remove('disabled');btn.textContent='Add to cart';},1200);}));
+            document.querySelectorAll('.buy-now').forEach(btn=>btn.addEventListener('click',(e)=>{ e.preventDefault(); addToCart({ id: btn.dataset.id, title: btn.dataset.title, price: Number(btn.dataset.price), image: btn.dataset.image }); window.location.href='checkout.html'; }));
+        });
+    </script>
+</body>
+</html>
