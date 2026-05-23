@@ -1,0 +1,238 @@
+:root {
+    --accent: #2f6b57;
+    --muted: #f2e8e6;
+    --accent-dark: #234f43;
+    --text: #2b2b2b;
+}
+
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--text);
+    background: #fff;
+    line-height: 1.45;
+    margin: 0;
+    overflow-x: hidden;
+    background:
+        radial-gradient(circle at top left, rgba(68, 239, 145, 0.1), transparent 30%),
+        radial-gradient(circle at top right, rgba(38, 220, 41, 0.2), transparent 25%),
+        linear-gradient(180deg, #fffefe 10%, rgba(38, 220, 41, 0.1) 15%, #f2f2f4 100%);
+}
+
+header.site-header {
+    background: linear-gradient(180deg, var(--accent) 0%, var(--accent-dark) 100%);
+    color: #fff;
+    padding: 2.2rem 0;
+    text-align: center;
+}
+
+header.site-header .subtitle {
+    opacity: 0.95;
+    font-weight: 500;
+    margin-top: 0.25rem;
+}
+
+h3{
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.box {
+    background:rgb(91, 132, 119);
+    border-radius: 12px;
+    padding: 1rem;
+    margin: 3rem;
+    box-shadow: 0 6px 18px rgba(46, 60, 50, 0.06);
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-align: justify;
+}
+.label-muted {
+    color: #666;
+    font-size: 0.95rem;
+}
+#biodata{
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    width: 100vw;
+    padding: 1.6rem 1rem 4rem 1rem;
+    min-height: 360px;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.biodata-bg{
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+.biodata-bg svg{ max-width: 100%; height: 100%; display: block; }
+
+.biodata-card{
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0px 5px 30px rgba(12,20,40,0.5);
+    padding: 2.2rem 2rem;
+    max-width: 350px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+.profile-img{
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 8px 18px rgba(46,60,50,0.06);
+}
+.biodata-card h2{
+    font-size: 1.6rem;
+    margin-top: 0.5rem;
+}
+.biodata-card .subtitle{
+    color: #666;
+    margin-bottom: 0.4rem;
+}
+.biodata-list{
+    font-size: 0.95rem;
+}
+.biodata-list .row{
+    margin-bottom: 0.45rem;
+}
+.biodata-list .col-4{
+    font-weight: 700;
+    color: #222;
+}
+.biodata-list .col-8{
+    color: #333;
+}
+
+.card {
+    border-radius: 8px;
+}
+
+.table-responsive {
+    overflow: auto;
+}
+table thead th {
+    background: rgba(47, 107, 87, 0.07);
+    border-top: none;
+}
+
+#projects a .btn{
+    border-radius: 20px;
+    border-color: #234f43;
+    transition: background 0.1s ease, border-color 0.1s ease, transform 0.2s ease;
+}
+
+#projects a .btn:hover{
+    background: var(--accent-dark);
+    transform: translateY(-2px);
+}
+
+#projects span{
+    background-color: #c2d2cc;
+    border: 1px solid var(--accent);
+    border-radius: 5px;
+    font-size: 0.75rem;
+    font-weight: 900;
+    padding: 0.25rem 0.75rem;
+    margin-bottom: 0.5rem;
+    max-width: min-content;
+}
+
+.project-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(46, 60, 50, 0.2);
+}
+
+.project-image-placeholder {
+    background: linear-gradient(135deg, #e6e0de, #f5f0ee);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.project-image-placeholder img { width: 100%; height: 100%; object-fit: cover; }
+
+footer {
+    position: relative;
+    float: bottom;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    width: 100vw;
+    background-color: var(--accent-dark);
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    z-index: 2;
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.05);
+    font-size: 0.95rem;
+}
+
+.subtitle, .label-muted, small.text-muted { letter-spacing: 0.2px; }
+
+.grades-card{
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(12,20,40,0.06);
+    background: #fff;
+}
+.grades-table thead th{
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    font-weight: 700;
+    padding: 0.8rem 1rem;
+}
+.grades-table tbody td{
+    padding: 1.25rem 1rem;
+    vertical-align: middle;
+}
+.grades-table tbody tr:nth-child(odd){
+    background: #fff;
+}
+.grades-table{
+    margin-bottom: 0;
+}
+
+tbody span{
+    display: inline-block;
+    border: 1px solid var(--accent);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    min-width: 50px;
+}
+
+tbody tr:hover td{
+    background: rgba(47, 107, 87, 0.1);
+    transition: background 0.1s ease;
+}
+
+@media (max-width: 576px){
+    .grades-table thead th, .grades-table tbody td{ padding: .85rem; }
+    .photo-placeholder {
+        height: 180px;
+    }
+    .accent-band { height: 80px; }
+    .profile-img{ width: 110px; height: 110px; }
+    .biodata-card{ padding: 1rem; }
+}
+@media (max-width: 768px){
+    #biodata{ background-size: 160% auto; background-position: center -40px; padding-top: 1.2rem; min-height: 300px; }
+}

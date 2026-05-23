@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Profil Siswa - TIK</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="site-header text-center">
+        <div class="container">
+            <h1 class="mb-1 fw-bold">Profil Siswa</h1>
+            <div class="subtitle" style="margin-top: -10px;">Mata Pelajaran TIK •  Kelas: XIA1</div>
+        </div>
+    </header>
+    <main class="container my-4">
+        <section id="biodata" class="mb-4 overflow-hidden position-relative rounded-4">
+            <div class="biodata-bg" aria-hidden="true">
+                <svg viewBox="0 0 1440 420" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" class="w-100 h-100">
+                    <path d="M0,160 C200,100 400,360 720,320 C1040,280 1200,220 1440,200 L1440,360 C1200,410 960,310 720,360 C480,410 240,310 0,360 Z" fill="var(--accent-dark)" />
+                    <path d="M0,120 C220,100 420,300 720,160 C1020,220 1220,180 1440,160 L1440,320 C1200,370 960,270 720,320 C480,370 240,270 0,320 Z" fill="var(--accent)" opacity="0.95" />
+                    <path d="M0,200 C240,240 480,240 720,200 C960,260 1180,120 1440,100 L1440,280 C1180,330 960,230 720,280 C480,330 240,230 0,280 Z" fill="#1f5546" opacity="0.9" />
+                </svg>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <div class="biodata-card text-center p-4">
+                        <img src="profile.png" alt="Foto Profil" class="profile-img rounded-circle mb-3">
+                        <h2 class="mb-1 fw-bold">Manuel Jason Mardjono</h2>
+                        <div class="subtitle mb-3">Siswa SMA Kolese Kanisius Jakarta</div>
+
+                        <div class="biodata-list text-start mt-3">
+                            <div class="row mb-2">
+                                <div class="col-4 fw-semibold">Kelas:</div>
+                                <div class="col-8">XIA1</div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-4 fw-semibold">Sekolah:</div>
+                                <div class="col-8">SMA Kolese Kanisius</div>
+                            </div>
+                            <div class="row mb-2">
+                                <div class="col-4 fw-semibold">Hobi:</div>
+                                <div class="col-8">Bermain gim, menggambar, bernyanyi, dan berolahraga</div>
+                            </div>
+                            <div class="row mb-0">
+                                <div class="col-4 fw-semibold">Cita-cita:</div>
+                                <div class="col-8">Dokter</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="box-wrap position-relative my-5">
+            <div class="box p-4">
+                <div class="d-md-flex justify-content-between align-items-center">
+                    <div>
+                        <h2 style="margin-bottom: -2px;">Tentang Saya</h2>
+                        <h3 class="mb-2">Deskripsi singkat tentang diriku</h3>
+                        <p class="mb-2">Saya adalah Jason, saya seorang siswa di kelas XIA1 yang sedang belajar Informatika. 
+                            Saya tertarik pada cara kerja teknologi dan ingin memahami logika di balik aplikasi yang sering kita gunakan sehari-hari.
+                            Sebenarnya, saya ingin menjadi dokter dimasa yang akan datang, tetapi saya rasa pelajaran ini membantu saya untuk menjadi orang
+                            yang lebih kritis melalui pelajaran Informatika.</p>
+                        <p class="mb-3">Selama semester kedua ini, saya belajar cara membuat situs web dengan menggunakan bahasa <i>HyperText Markup Language</i>
+                            (HTML), <i>Cascading Styles Sheet</i> (CSS), dan <i>JavaScript</i> (JS). Saya menggunakan ilmu yang saya peroleh dari materi-materi tersebut untuk
+                            membuat berbagai jenis website. Saya memiliki projek pembuatan website <i>e-commerce</i>, seperti Allesio dan Audio Bible, lalu saya juga membuat
+                             website biodata diri. Bukan hanya itu, saya juga pernah bereksperimen dengan JS sehingga menciptakan fitur belanja di website <i>e-commerce</i>.</p>
+                        <button id="btnAbout" class="btn btn-outline-light btn-sm">Kontak Saya</button>
+                    </div>
+                    <div class="mt-3 mt-md-0"></div>
+                </div>
+            </div>
+        </div>
+        <section id="grades" class="mb-4">
+            <h2 class="fw-bold" style="margin-bottom: -3px;">Nilai Pelajaran</h2>
+            <h3 class="mb-3" style="color: var(--accent-dark);">Nilai matapelajaran TIK TA 2025/2026</h3>
+            <div class="grades-card mb-3">
+                <div class="table-responsive">
+                    <table class="table grades-table mb-0">
+                        <thead>
+                            <tr>
+                                <th class="text-center" style="width:80px">No</th>
+                                <th class="text-center">Materi</th>
+                                <th class="text-center" style="width:120px">Nilai</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-center">1</td>
+                                <td class="text-center">Project Website Allesio</td>
+                                <td class="text-center"><span>98</span></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">2</td>
+                                <td class="text-center">Tugas Web Biodata</td>
+                                <td class="text-center"><span>80</span></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">3</td>
+                                <td class="text-center">Ujian Bootstrap</td>
+                                <td class="text-center"><span>90</span></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">4</td>
+                                <td class="text-center">Tugas Analisis UI/UX Website</td>
+                                <td class="text-center"><span>100</span></td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">5</td>
+                                <td class="text-center">Analisis JS Mini Project</td>
+                                <td class="text-center"><span>100</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="mb-5">
+            <h3 class="h5 mb-3 fw-bold">Project Semester Ini</h3>
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="project-image-placeholder mb-2">
+                        <img src="img/alle.png" alt="Project 1" style="width:100%; height:200px; object-fit:cover;">
+                    </div>
+                    <div class="card project-card p-3 h-10">
+                        <div class="card-body d-flex flex-column">
+                            <span>1</span>
+                            <h5 class="card-title">Website Allesio</h5>
+                            <p class="card-text">Situs <i>e-commerce</i> untuk menjual produk asli khas Indonesia.</p>
+                            <a href="project1.html" style="color:#fff; text-decoration:none;"><btn class="btn btn-sm mt-auto">Selengkapnya</btn></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="project-image-placeholder mb-2">
+                        <img src="img/biodata.png" alt="Project 2" style="width:100%; height:200px; object-fit:cover;">
+                    </div>
+                    <div class="card project-card p-3 h-10">
+                        <div class="card-body d-flex flex-column">
+                            <span>2</span>
+                            <h5 class="card-title">Biodata Diri</h5>
+                            <p class="card-text">Website untuk menampilkan biodata diri dengan tampilan yang menarik.</p>
+                            <a href="project2.html" style="color:#fff; text-decoration:none;"><btn class="btn btn-sm mt-auto">Selengkapnya</btn></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="project-image-placeholder mb-2">
+                        <img src="img/ab.png" alt="Project 3" style="width:100%; height:200px; object-fit:cover;">
+                    </div>
+                    <div class="card project-card p-3 h-10">
+                        <div class="card-body d-flex flex-column">
+                            <span>3</span>
+                            <h5 class="card-title">Audio Bible</h5>
+                            <p class="card-text">Website <i>e-commerce</i> untuk menjual produk audio berupa earbuds.</p>
+                            <a href="project3.html" style="color:#fff; text-decoration:none;"><btn class="btn btn-sm mt-auto">Selengkapnya</btn></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="py-3 text-center">
+        &copy; 2026 - Profil Siswa • TIK
+    </footer>
+    <script>
+        console.log('Student report loaded');
+
+        document.getElementById('btnAbout').addEventListener('click', function(){
+            alert('Instagram | @jasonmardjono || Telefon | +62-811-1219-817');
+            console.log('Tombol Kontak Saya diklik');
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
