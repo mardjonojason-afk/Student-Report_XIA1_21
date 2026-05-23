@@ -1,0 +1,89 @@
+:root{
+  --accent: #122d69;
+  --muted: #6b7280;
+  --paper: #ffffff;
+}
+body{ 
+    font-family: Roboto, Arial, sans-serif; 
+    background: #f7fafc; 
+    color: #10203a; 
+    margin:0; 
+}
+
+header{ 
+    background:var(--accent); 
+    color:white; 
+    padding:14px 20px; 
+    display:flex; 
+    justify-content:space-between; 
+    align-items:center; 
+}
+
+header h2{ margin:0; font-size:1.25rem; }
+
+.checkout-container{ 
+    background:var(--paper); 
+    border-radius:8px; 
+    padding:20px; 
+    box-shadow:0 8px 24px rgba(16,32,58,0.06); 
+}
+
+#checkoutCartList{ list-style:none; padding:0; margin:12px 0; }
+#checkoutCartList li{ 
+    display:flex; 
+    gap:12px; 
+    align-items:center; 
+    padding:10px 8px; 
+    border-bottom:1px solid rgba(16,32,58,0.04); 
+}
+#checkoutCartList li .title{ font-weight:700; }
+
+.total{ font-size:1.1rem; font-weight:700; }
+
+#checkoutForm{ display:flex; flex-direction:column; gap:10px; margin-top:12px; }
+#checkoutForm label{ font-size:0.9rem; color:var(--muted); }
+#checkoutForm input, #checkoutForm textarea{ 
+    padding:10px; 
+    border-radius:8px; 
+    border:1px solid rgba(16,32,58,0.08); 
+    width:100%; 
+}
+#checkoutForm button{ 
+    background:var(--accent); 
+    color:white; 
+    border:none; 
+    padding:12px; 
+    border-radius:8px; 
+    cursor:pointer; 
+    font-weight:700; 
+}
+#checkoutForm button:hover{ opacity:0.95; }
+
+#checkoutTable{ 
+    width:100%; 
+    border-collapse:collapse; 
+    margin-top:12px; 
+}
+#checkoutTable th, #checkoutTable td{ 
+    padding:10px 8px; 
+    border-bottom:1px solid rgba(16,32,58,0.04); 
+}
+#checkoutTable img{ width:48px; height:48px; object-fit:cover; border-radius:6px; }
+
+.checkout-btn, #placeOrder{ 
+    background:var(--accent); 
+    color:white; 
+    padding:12px 14px; 
+    border-radius:8px; 
+    border:none; 
+    cursor:pointer; 
+    font-weight:700; 
+}
+
+.checkout-btn:hover, #placeOrder:hover{ opacity:0.95; }
+
+@media (max-width:640px){
+  header{ padding:12px; }
+  .checkout-container{ padding:16px; }
+  nav .logo img{ height:48px; }
+}

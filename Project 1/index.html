@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allesio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .btn{
+            border-radius: 20px;
+            border-color: #234f43;
+            transition: background 0.1s ease, border-color 0.1s ease, transform 0.2s ease;
+        }
+
+        .btn:hover{
+            border: 1px solid #51746a;
+            transform: translateY(-2px);
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <section class="py-2">
+        <p class="m-4">Kembali ke halaman utama <button class="btn"><a href="../index.html" style="text-decoration: none; color: black;">Profil Siswa</a></button></p>
+    </section>
+    <nav>
+        <div class="logo">
+            <a href="#"><img src="images/logo.png" alt="Logo"/></a>
+        </div>
+        <div class="login-btn-container">
+            <button class="login-btn">Login</button>
+            <button id="cartBtn" class="cart-btn" aria-label="Keranjang"><img src="images/cart.png"> <span id="cartCount" class="cart-count">0</span></button>
+        </div>
+    </nav>
+    <div class="main-content">  
+        <h1>Selamat Datang di Allesio</h1>
+        <p>Temukan berbagai produk murah dan berkualitas karya anak bangsa disini!</p>
+    </div>
+    <section id="discounts" class="discount-rotator" aria-labelledby="discountsTitle">
+        <h2 id="discountsTitle">Alle Special Sale</h2>
+        <div class="rotator" id="rotator" aria-live="polite">
+            <button class="rotator-btn prev" id="prevBtn" aria-label="Item sebelumnya">◀</button>
+            <div class="card-wrap">
+                <ul class="cards" id="cards">
+                    <li class="card" data-index="0">
+                        <div class="card-inner">
+                            <img src="images/batik_c.png" alt="Celana Batik">
+                            <div class="meta">
+                                <div><strong>Celana Batik</strong> <span class="badge">Handmade</span></div>
+                                <div class="price-old">Rp400.000</div>
+                                <div class="price-new">Rp350.000</div>
+                            </div>
+                        </div>
+                        <div class="action-row">
+                            <button class="like-carousel" data-id="1" aria-pressed="false" title="Simpan">♡</button>
+                            <button class="add-cart-carousel" data-id="1" data-title="Celana Batik" data-price="350000" data-img="images/batik_c.png">+</button>
+                        </div>
+                    </li>
+                    <li class="card" data-index="1">
+                        <div class="card-inner">
+                            <img src="images/lebaran.webp" alt="Paket Kue Lebaran">
+                            <div class="meta">
+                                <div><strong>Paket Kue Lebaran</strong> <span class="badge">-10%</span></div>
+                                <div class="price-old">Rp280.000</div>
+                                <div class="price-new">Rp250.000</div>
+                            </div>
+                        </div>
+                        <div class="action-row">
+                            <button class="like-carousel" data-id="5" aria-pressed="false" title="Simpan">♡</button>
+                            <button class="add-cart-carousel" data-id="5" data-title="Paket Kue Lebaran" data-price="250000" data-img="images/lebaran.webp">+</button>
+                        </div>
+                    </li>
+                    <li class="card" data-index="2">
+                        <div class="card-inner">
+                            <img src="images/luwak.png" alt="Kopi Luwak 250g">
+                            <div class="meta">
+                                <div><strong>Kopi Luwak (250g)</strong> <span class="badge">Best Seller</span></div>
+                                <div class="price-old">Rp255.000</div>
+                                <div class="price-new">Rp150.000</div>
+                            </div>
+                        </div>
+                        <div class="action-row">
+                            <button class="like-carousel" data-id="4" aria-pressed="false" title="Simpan">♡</button>
+                            <button class="add-cart-carousel" data-id="4" data-title="Kopi Luwak (250g)" data-price="150000" data-img="images/luwak.png">+</button>
+                        </div>
+                    </li>
+                    <li class="card" data-index="3">
+                        <div class="card-inner">
+                            <img src="images/shijau.jpeg" alt="Sambal Hijau Padang 200g">
+                            <div class="meta">
+                                <div><strong>Sambal Hijau Padang (200g)</strong> <span class="badge">-5%</span></div>
+                                <div class="price-old">Rp47.000</div>
+                                <div class="price-new">Rp45.000</div>
+                            </div>
+                        </div>
+                        <div class="action-row">
+                            <button class="like-carousel" data-id="3" aria-pressed="false" title="Simpan">♡</button>
+                            <button class="add-cart-carousel" data-id="3" data-title="Sambal Hijau Padang (200g)" data-price="45000" data-img="images/shijau.jpeg">+</button>
+                        </div>
+                    </li>
+                    <li class="card" data-index="4">
+                        <div class="card-inner">
+                            <img src="images/nastar.png" alt="Kue Nastar">
+                            <div class="meta">
+                                <div><strong>Kue Nastar </strong> <span class="badge">Promo</span></div>
+                                <div class="price-old">Rp65.000</div>
+                                <div class="price-new">Rp60.000</div>
+                            </div>
+                        </div>
+                        <div class="action-row">
+                            <button class="like-carousel" data-id="5" aria-pressed="false" title="Simpan">♡</button>
+                            <button class="add-cart-carousel" data-id="5" data-title="Kue Nastar" data-price="60000" data-img="images/nastar.png">+</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <button class="rotator-btn next" id="nextBtn" aria-label="Item selanjutnya">▶</button>
+        </div>
+        <div class="controls">
+            <button id="pauseResume" aria-pressed="false">Pause</button>
+            <div class="indicators" id="indicators" role="tablist" aria-label="Pilih item">
+                <button class="dot active" data-index="0" aria-label="Item 1"></button>
+                <button class="dot" data-index="1" aria-label="Item 2"></button>
+                <button class="dot" data-index="2" aria-label="Item 3"></button>
+                <button class="dot" data-index="3" aria-label="Item 4"></button>
+                <button class="dot" data-index="4" aria-label="Item 5"></button>
+            </div>
+        </div>
+    </section>
+    <section id="catalog" class="catalog" aria-labelledby="catalogTitle">
+        <h2 id="catalogTitle">Cari Semua Kebutuhanmu di Allesio!</h2>
+        <div class="catalog-inner">
+            <aside class="categories" id="categories" aria-label="Daftar kategori">
+                <button class="cat-btn active" data-cat="all">Semua</button>
+                <button class="cat-btn" data-cat="food">Makanan</button>
+                <button class="cat-btn" data-cat="craft">Kerajinan</button>
+                <button class="cat-btn" data-cat="fashion">Fashion</button>
+                <button class="cat-btn" data-cat="beauty">Kecantikan</button>
+            </aside>
+            <div class="items-panel">
+                <div class="items-toolbar">
+                    <label for="sortSelect">Urutkan:</label>
+                    <select id="sortSelect">
+                        <option value="popular">Best reviews</option>
+                        <option value="price-asc">Harga: Rendah → Tinggi</option>
+                        <option value="price-desc">Harga: Tinggi → Rendah</option>
+                    </select>
+                    <input id="searchItems" placeholder="Cari dalam kategori..." />
+                </div>
+                <div id="itemsGrid" class="items-grid" aria-live="polite">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="site-footer" role="contentinfo">
+        <div class="footer-inner">
+            <div class="footer-col about">
+                <a class="footer-logo" href="#"><img src="images/logo.png" alt="Allesio logo"/></a>
+                <p>Allesio. platform penjualan UMKM lokal. Dukung produk karya anak bangsa dengan belanja aman dan mudah.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li>Email: <a href="mailto:support@allesio.com">support@allesio.com</a></li>
+                    <li>Telepon: <a href="tel:+628123456789">+62 811-1219-817</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Ikuti Kami</h4>
+                <div class="socials">
+                    <a href="#" aria-label="Ikuti di Facebook"><img src="images/fb.jpg" alt="facebook"></a>
+                    <a href="#" aria-label="Ikuti di Instagram"><img src="images/ig.png" alt="instagram"></a>
+                    <a href="#" aria-label="Ikuti di Twitter"><img src="images/x.webp" alt="X"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="cartPanel" class="cart-panel" hidden aria-live="polite"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
